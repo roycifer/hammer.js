@@ -144,9 +144,8 @@
     <p class="lead">A javascript library for multi-touch gestures.</p>
 
     <p><a class="btn btn-large btn-download"
-          href="https://github.com/EightMedia/hammer.js/tree/1.1.0/">
-      Download Hammer.js
-      <small>1.1.0</small>
+          href="https://github.com/EightMedia/hammer.js/tree/1.1.1/">
+      Download Hammer.js <small>1.1.1</small>
     </a>
     </p>
   </div>
@@ -171,13 +170,13 @@
         not an component library.</p>
       <ul class="inline">
         <li>
-          <a href="http://rawgithub.com/EightMedia/hammer.js/1.1.0/tests/manual/events.html">Event
+          <a href="http://rawgithub.com/EightMedia/hammer.js/1.1.1/tests/manual/events.html">Event
             logger</a></li>
         <li>
-          <a href="http://rawgithub.com/EightMedia/hammer.js/1.1.0/tests/manual/pull-to-refresh.html">Pull-to-refresh</a>
+          <a href="http://rawgithub.com/EightMedia/hammer.js/1.1.1/tests/manual/pull-to-refresh.html">Pull-to-refresh</a>
         </li>
         <li>
-          <a href="http://rawgithub.com/EightMedia/hammer.js/1.1.0/tests/manual/carousel.html">Carousel</a>
+          <a href="http://rawgithub.com/EightMedia/hammer.js/1.1.1/tests/manual/carousel.html">Carousel</a>
         </li>
       </ul>
     </div>
@@ -225,16 +224,16 @@
   </div>
 </div>
 
-<script src="http://rawgithub.com/EightMedia/hammer.js/1.1.0/hammer.min.js"></script>
+<script src="http://rawgithub.com/EightMedia/hammer.js/1.1.1/hammer.min.js"></script>
 <script>
 
   var touch_area = document.getElementById('touch-area');
   var gesture_log = document.getElementById('gesture-log');
   var options = {
-    transform_min_scale: 0.1,
-    transform_min_rotation: 2,
-    drag_block_horizontal: true,
-    tap_always: false
+    transformMinScale: 0.1,
+    transformMinRotation: 2,
+    dragBlockHorizontal: true,
+    tapAlways: false
   };
   Hammer(touch_area, options).on("tap doubletap hold drag swipe pinch rotate", function(ev) {
     gesture_log.innerHTML = ev.type;
