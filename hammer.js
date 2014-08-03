@@ -725,7 +725,7 @@ inherit(MouseInput, Input, {
             pointerType: INPUT_TYPE_MOUSE,
             srcEvent: ev
         });
-    },
+    }
 });
 
 var POINTER_INPUT_MAP = {
